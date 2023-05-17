@@ -1,0 +1,2 @@
+- name: PMD - Salesforce APEX code analyzer action
+  uses: legetz/setup-pmd@v6.48
