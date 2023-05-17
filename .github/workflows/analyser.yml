@@ -1,2 +1,17 @@
-- name: PMD - Salesforce APEX code  action
-  uses: legetz/setup-pmd@v6.48
+name: PMD - Salesforce APEX code analyzer action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  analyze_code:
+    name: Analyze code with PMD
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up PMD
+        uses: legetz/setup-pmd@v6.48
+
+      # Add more steps or configurations as needed for your workflow
